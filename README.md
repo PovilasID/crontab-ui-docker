@@ -10,6 +10,10 @@ Crontab UI
 
 Editing the plain text crontab is error prone for managing jobs, e.g., adding jobs, deleting jobs, or pausing jobs. A small mistake can easily bring down all the jobs and might cost you a lot of time. With Crontab UI, it is very easy to manage crontab. Here are the key features of Crontab UI.
 
+# FORK INFO
+
+Docker CLI added. Most times you need cron to run task in some other container (rclone; restic) or even natively. Having access to docker inside this container allows to write execute `docker exec` commands as if in host. This will allow to run docker commands imediatly and even in host (if you have host's cron file mounted)
+
 ![flow](https://github.com/alseambusher/crontab-ui/raw/gh-pages/screenshots/flow.gif)
 
 1. Easy setup. You can even import from existing crontab.
