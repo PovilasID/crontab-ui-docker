@@ -16,6 +16,7 @@ RUN   apk --no-cache add \
       nodejs \
       npm \
       supervisor \
+      docker \
       tzdata
 
 COPY supervisord.conf /etc/supervisord.conf
